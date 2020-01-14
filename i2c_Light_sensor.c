@@ -67,9 +67,6 @@ uint16_t getlux() {
 
 void main()
 {
-MCUCSR=0x80;
-MCUCSR=0x80;
- InitLCD(0);
 i2c_init();
 i2c_start();
 i2c_write(0x23);
@@ -78,10 +75,7 @@ i2c_stop();
 unsigned long long lux;
 while(1)
 {
-
-
-lux=i2c_read(a);
- 
+lux=i2c_read(a); 
 
 }
 }
