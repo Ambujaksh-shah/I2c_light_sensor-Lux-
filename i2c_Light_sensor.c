@@ -75,7 +75,7 @@ i2c_stop();
 unsigned long long lux;
 while(1)
 {
-lux=i2c_read(a); 
+lux=i2c_read(1); 
 
 }
 }
